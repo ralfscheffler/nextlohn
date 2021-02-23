@@ -1,9 +1,13 @@
 
 import Link from 'next/link'
 import Personalform from '../pages/Personalform'
+import {useRouter} from 'next/router'
+import Firepage from './Firepage'
 
 
+//const router = useRouter();
 function switchTab(e){
+    
     const tabs = document.getElementsByClassName('tablink');
     for (var i=0;i < tabs.length; i++){
         tabs[i].classList.remove('w3-red');
@@ -12,7 +16,7 @@ function switchTab(e){
     e.target.classList.add('w3-red');
     if(e.currentTarget.id=='pers'){
         //<Link href='../pages/Personalform'><a>Personalbogen</a></Link>
-        
+        Firepage('/Personalform')
     }
 }
 
