@@ -12,7 +12,7 @@ function switchTab(e){
     e.target.classList.add('w3-red');
     if(e.currentTarget.id=='pers'){
         //<Link href='../pages/Personalform'><a>Personalbogen</a></Link>
-        window.open('../pages/Personalform');
+        
     }
 }
 
